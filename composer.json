@@ -1,5 +1,4 @@
 {
-    "minimum-stability": "dev",
     "name": "horde/stream_wrapper",
     "description": "PHP stream wrappers library",
     "type": "library",
@@ -17,11 +16,11 @@
             "role": "lead"
         }
     ],
-    "time": "2021-11-19",
+    "time": "2024-11-07",
     "repositories": [
         {
             "type": "composer",
-            "url": "https://horde-satis.maintaina.com/"
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
@@ -45,6 +44,11 @@
     "autoload-dev": {
         "psr-4": {
             "Horde\\Stream\\Wrapper\\Test\\": "test/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "horde/horde-installer-plugin": true
         }
     }
 }
